@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landmark Puzzle - Pirate Map</title>
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+  <h1>Landmark Puzzle - Find the Treasure!</h1>
+  <div id="map-container">
+    <img id="pirate-map" src="Pirate Map.png" alt="Pirate Map" data-clicks="0">
+  </div>
+  <div class="clue">Clue 1: The treasure lies east of the Tall Mountain, which is located at 15°N, 10°W and is exactly 2 degrees east.</div>
+  <div class="clue">Clue 2: The treasure is south of the Pirate Shipwreck, located at 18°N, 5°W and is exactly 6 degrees south.</div>
+  <input type="text" id="coordinates" placeholder="Enter coordinates (e.g., 15 N 10 W)">
+  <br>
+  <button onclick="checkTreasure()">Submit</button>
+  <div id="result"></div>
+
+  <div id="flag-message" style="display:none;"></div>
+
+  <!-- External JavaScript file -->
+  <script src="script.js"></script>
+</body>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; object-src 'none';">
+</html>
